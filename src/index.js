@@ -1,24 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
-import thunkMiddleware from 'redux-thunk';
-import { createLogger } from 'redux-logger';
 import 'tachyons';
 
 import App from './containers/App';
 import registerServiceWorker from './registerServiceWorker';
-import { requestRobots, flipCard } from './reducers'
+import configureStore from './store/configureStore';
 
-import './index.css';
-
-const logger = createLogger();
-const rootReducers = combineReducers({requestRobots, flipCard});
-const store = createStore(rootReducers, applyMiddleware(thunkMiddleware, logger));
+const store = configureStore();
 
 ReactDOM.render(
   <Provider store={store}>
-    <App/>
+    <App />
   </Provider>,
   document.getElementById('root')
 );
