@@ -11,7 +11,6 @@ describe('Store', function() {
 
     const actual = store.getState();
     const expected = {
-      cardReducer: { card: {} }, 
       robotsReducer: {
         isPending: false, 
         robots: [1, 2, 3, 4, 5, 6, 7, 8,1, 2, 3, 4, 5, 6, 7, 8]

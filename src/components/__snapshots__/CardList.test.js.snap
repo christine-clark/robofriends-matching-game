@@ -25,8 +25,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Card
-          id={1}
-          onChange={undefined}
+          id="robot0-1"
 />,
       ],
       "className": "card-list",
@@ -36,10 +35,9 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": "0",
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
-          "id": 1,
-          "onChange": undefined,
+          "id": "robot0-1",
         },
         "ref": null,
         "rendered": null,
@@ -56,8 +54,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Card
-            id={1}
-            onChange={undefined}
+            id="robot0-1"
 />,
         ],
         "className": "card-list",
@@ -67,10 +64,9 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": "0",
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
-            "id": 1,
-            "onChange": undefined,
+            "id": "robot0-1",
           },
           "ref": null,
           "rendered": null,

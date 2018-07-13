@@ -26,7 +26,6 @@ ShallowWrapper {
         <Header />,
         <ErrorBoundary>
           <CardList
-                    onCardClick={undefined}
                     robots={Array []}
           />
 </ErrorBoundary>,
@@ -50,7 +49,6 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": <CardList
-            onCardClick={undefined}
             robots={Array []}
 />,
         },
@@ -60,7 +58,6 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "onCardClick": undefined,
             "robots": Array [],
           },
           "ref": null,
@@ -82,7 +79,6 @@ ShallowWrapper {
           <Header />,
           <ErrorBoundary>
             <CardList
-                        onCardClick={undefined}
                         robots={Array []}
             />
 </ErrorBoundary>,
@@ -106,7 +102,6 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <CardList
-              onCardClick={undefined}
               robots={Array []}
 />,
           },
@@ -116,7 +111,6 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "onCardClick": undefined,
               "robots": Array [],
             },
             "ref": null,

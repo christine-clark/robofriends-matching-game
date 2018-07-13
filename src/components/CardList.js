@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Card from './Card';
 
-const CardList = ({ robots, flipCard }) => {
+const CardList = ({ robots }) => {
   return (
     <ul className="card-list">
       {
         robots.map((robot, i) => {
-          return <Card key={i} id={robot} onChange={flipCard} />;
+          return <Card key={i} id={`robot${i}-${robot}`} />;
         })
       }
     </ul>

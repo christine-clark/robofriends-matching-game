@@ -29,13 +29,13 @@ class MainPage extends Component {
   }
 
   render() {
-    const { isPending, onCardClick } = this.props;
+    const { isPending } = this.props;
     return (
       <div className='robofriends tc'>
         <Header />
         { isPending ? <h1>Loading</h1> :
           <ErrorBoundry>
-            <CardList robots={this.shuffleRobots()} onCardClick={onCardClick}/>
+            <CardList robots={this.shuffleRobots()} />
           </ErrorBoundry>
         }
       </div>
