@@ -5,7 +5,12 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Card
+    alt="robot1"
+    flippedCard={Array []}
     id="robot1-1"
+    matchingCards={Array []}
+    onCardClick={[Function]}
+    openedCard={Array []}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -20,8 +25,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <img
-        alt="robot1-1"
-        src="https://robohash.org/robot1-1?size=100x100"
+        alt="robot1"
+        id="robot1-1"
+        src="https://robohash.org/robot1?size=100x100"
 />,
       "className": "card tc grow bg-light-green br3 pa2 ma2 dib bw2 shadow-5 closed",
       "onClick": [Function],
@@ -32,8 +38,9 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "alt": "robot1-1",
-        "src": "https://robohash.org/robot1-1?size=100x100",
+        "alt": "robot1",
+        "id": "robot1-1",
+        "src": "https://robohash.org/robot1?size=100x100",
       },
       "ref": null,
       "rendered": null,
@@ -48,8 +55,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <img
-          alt="robot1-1"
-          src="https://robohash.org/robot1-1?size=100x100"
+          alt="robot1"
+          id="robot1-1"
+          src="https://robohash.org/robot1?size=100x100"
 />,
         "className": "card tc grow bg-light-green br3 pa2 ma2 dib bw2 shadow-5 closed",
         "onClick": [Function],
@@ -60,8 +68,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "alt": "robot1-1",
-          "src": "https://robohash.org/robot1-1?size=100x100",
+          "alt": "robot1",
+          "id": "robot1-1",
+          "src": "https://robohash.org/robot1?size=100x100",
         },
         "ref": null,
         "rendered": null,

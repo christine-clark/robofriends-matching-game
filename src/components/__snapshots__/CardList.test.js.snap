@@ -24,9 +24,20 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Card
-          id="robot0-1"
+        <li>
+          Number of moves: 
+          0
+</li>,
+        Array [
+          <Card
+            alt="robot1"
+            flippedCard={Array []}
+            id="robot0-1"
+            matchingCards={Array []}
+            onCardClick={[Function]}
+            openedCard={Array []}
 />,
+        ],
       ],
       "className": "card-list",
     },
@@ -34,10 +45,32 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": "0",
-        "nodeType": "class",
+        "key": undefined,
+        "nodeType": "host",
         "props": Object {
+          "children": Array [
+            "Number of moves: ",
+            0,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Number of moves: ",
+          0,
+        ],
+        "type": "li",
+      },
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "function",
+        "props": Object {
+          "alt": "robot1",
+          "flippedCard": Array [],
           "id": "robot0-1",
+          "matchingCards": Array [],
+          "onCardClick": [Function],
+          "openedCard": Array [],
         },
         "ref": null,
         "rendered": null,
@@ -53,9 +86,20 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Card
-            id="robot0-1"
+          <li>
+            Number of moves: 
+            0
+</li>,
+          Array [
+            <Card
+              alt="robot1"
+              flippedCard={Array []}
+              id="robot0-1"
+              matchingCards={Array []}
+              onCardClick={[Function]}
+              openedCard={Array []}
 />,
+          ],
         ],
         "className": "card-list",
       },
@@ -63,10 +107,32 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": "0",
-          "nodeType": "class",
+          "key": undefined,
+          "nodeType": "host",
           "props": Object {
+            "children": Array [
+              "Number of moves: ",
+              0,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Number of moves: ",
+            0,
+          ],
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "function",
+          "props": Object {
+            "alt": "robot1",
+            "flippedCard": Array [],
             "id": "robot0-1",
+            "matchingCards": Array [],
+            "onCardClick": [Function],
+            "openedCard": Array [],
           },
           "ref": null,
           "rendered": null,
