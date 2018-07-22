@@ -30,12 +30,13 @@ ShallowWrapper {
 </li>,
         Array [
           <Card
-            alt="robot1"
+            disabled={false}
             flippedCard={Array []}
             id="robot0-1"
             matchingCards={Array []}
             onCardClick={[Function]}
             openedCard={Array []}
+            title="robot1"
 />,
         ],
       ],
@@ -65,12 +66,13 @@ ShallowWrapper {
         "key": "0",
         "nodeType": "function",
         "props": Object {
-          "alt": "robot1",
+          "disabled": false,
           "flippedCard": Array [],
           "id": "robot0-1",
           "matchingCards": Array [],
           "onCardClick": [Function],
           "openedCard": Array [],
+          "title": "robot1",
         },
         "ref": null,
         "rendered": null,
@@ -92,12 +94,13 @@ ShallowWrapper {
 </li>,
           Array [
             <Card
-              alt="robot1"
+              disabled={false}
               flippedCard={Array []}
               id="robot0-1"
               matchingCards={Array []}
               onCardClick={[Function]}
               openedCard={Array []}
+              title="robot1"
 />,
           ],
         ],
@@ -127,12 +130,13 @@ ShallowWrapper {
           "key": "0",
           "nodeType": "function",
           "props": Object {
-            "alt": "robot1",
+            "disabled": false,
             "flippedCard": Array [],
             "id": "robot0-1",
             "matchingCards": Array [],
             "onCardClick": [Function],
             "openedCard": Array [],
+            "title": "robot1",
           },
           "ref": null,
           "rendered": null,

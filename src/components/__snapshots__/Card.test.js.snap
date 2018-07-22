@@ -25,12 +25,16 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <img
-        alt="robot1"
+        alt={undefined}
         id="robot1-1"
-        src="https://robohash.org/robot1?size=100x100"
+        src="https://robohash.org/undefined?size=100x100"
+        title={undefined}
 />,
-      "className": "card tc grow bg-light-green br3 pa2 ma2 dib bw2 shadow-5 closed",
+      "className": "card tc bg-light-green br3 pa2 ma2 dib bw2 shadow-5 closed",
+      "disabled": undefined,
+      "id": "robot1-1",
       "onClick": [Function],
+      "title": undefined,
     },
     "ref": null,
     "rendered": Object {
@@ -38,9 +42,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "alt": "robot1",
+        "alt": undefined,
         "id": "robot1-1",
-        "src": "https://robohash.org/robot1?size=100x100",
+        "src": "https://robohash.org/undefined?size=100x100",
+        "title": undefined,
       },
       "ref": null,
       "rendered": null,
@@ -55,12 +60,16 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <img
-          alt="robot1"
+          alt={undefined}
           id="robot1-1"
-          src="https://robohash.org/robot1?size=100x100"
+          src="https://robohash.org/undefined?size=100x100"
+          title={undefined}
 />,
-        "className": "card tc grow bg-light-green br3 pa2 ma2 dib bw2 shadow-5 closed",
+        "className": "card tc bg-light-green br3 pa2 ma2 dib bw2 shadow-5 closed",
+        "disabled": undefined,
+        "id": "robot1-1",
         "onClick": [Function],
+        "title": undefined,
       },
       "ref": null,
       "rendered": Object {
@@ -68,9 +77,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "alt": "robot1",
+          "alt": undefined,
           "id": "robot1-1",
-          "src": "https://robohash.org/robot1?size=100x100",
+          "src": "https://robohash.org/undefined?size=100x100",
+          "title": undefined,
         },
         "ref": null,
         "rendered": null,
