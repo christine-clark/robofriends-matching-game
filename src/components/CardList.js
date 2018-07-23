@@ -6,23 +6,15 @@ class CardList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      disabled: false,
       matchingCards: [],
       flippedCard: [],
       openedCard: [],
       numberOfMoves: 0
     };
-
-    this.onCardClick = this.onCardClick.bind(this);
   }
 
-  onCardClick(event) {
-    if (this.state.disabled) {
-      return;
-    }
-
+  onCardClick = (event) => {
     const flippedCard = [event.target.id, event.target.title];
-    this.setState({ disabled: true });
     this.setState({ flippedCard: flippedCard });
 
     if (this.state.openedCard.length) {
@@ -36,39 +28,44 @@ class CardList extends Component {
 
   doCardsMatch(flippedCardId, flippedCardTitle) {
     const self = this;
+    let matchingCards = this.state.matchingCards.slice(0);
+    const cardsMatch = this.state.openedCard[0] !== flippedCardId && 
+    this.state.openedCard[1] === flippedCardTitle;
+    const newFlippedCard = [flippedCardId, flippedCardTitle];
 
+    if (cardsMatch) {
+      matchingCards.push(this.state.openedCard);
+      matchingCards.push(newFlippedCard);
+      this.setState({ matchingCards: matchingCards });
+    } 
+    
     setTimeout(function() {
-      let matchingCards = self.state.matchingCards.slice(0);
-      const cardsMatch = self.state.openedCard[0] !== flippedCardId && 
-        self.state.openedCard[1] === flippedCardTitle;
-      const newFlippedCard = [flippedCardId, flippedCardTitle];
-      
-      if (cardsMatch) {
-        matchingCards.push(self.state.openedCard);
-        matchingCards.push(newFlippedCard);
-        self.setState({ matchingCards: matchingCards });
-      }
-
       self.setState({ numberOfMoves: self.state.numberOfMoves + 1 });
       self.setState({ flippedCard: [] });
       self.setState({ openedCard: [] });
-      self.setState({ disabled: false });
-    }, 1000);
+      self.checkIfWin(matchingCards);
+    }, 500);
+  }
+
+  checkIfWin(matchingCards) {
+    if (matchingCards.length === this.props.robots.length) {
+      // Show window to display winning! and number of moves / star rating
+      alert('You win! Yay!');
+    }
   }
 
   render() {
     const { robots } = this.props;
-    const { disabled, flippedCard, matchingCards, openedCard, numberOfMoves } = this.state;
+    const { flippedCard, matchingCards, openedCard, numberOfMoves } = this.state;
     
     return (
       <ul className="card-list">
-        <li>Number of moves: {numberOfMoves}</li>
+        <li className="pa2">Moves: {numberOfMoves}</li>
        {
           robots.map((robot, i) => {
             return <Card key={i} 
                          id={`robot${i}-${robot}`} 
                          title={`robot${robot}`}
-                         disabled={disabled}
                          flippedCard={flippedCard}
                          matchingCards={matchingCards}
                          openedCard={openedCard}

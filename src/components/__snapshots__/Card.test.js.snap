@@ -31,7 +31,6 @@ ShallowWrapper {
         title={undefined}
 />,
       "className": "card tc bg-light-green br3 pa2 ma2 dib bw2 shadow-5 closed",
-      "disabled": undefined,
       "id": "robot1-1",
       "onClick": [Function],
       "title": undefined,
@@ -66,7 +65,6 @@ ShallowWrapper {
           title={undefined}
 />,
         "className": "card tc bg-light-green br3 pa2 ma2 dib bw2 shadow-5 closed",
-        "disabled": undefined,
         "id": "robot1-1",
         "onClick": [Function],
         "title": undefined,

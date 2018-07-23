@@ -24,13 +24,14 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <li>
-          Number of moves: 
+        <li
+          className="pa2"
+>
+          Moves: 
           0
 </li>,
         Array [
           <Card
-            disabled={false}
             flippedCard={Array []}
             id="robot0-1"
             matchingCards={Array []}
@@ -50,13 +51,14 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Number of moves: ",
+            "Moves: ",
             0,
           ],
+          "className": "pa2",
         },
         "ref": null,
         "rendered": Array [
-          "Number of moves: ",
+          "Moves: ",
           0,
         ],
         "type": "li",
@@ -66,7 +68,6 @@ ShallowWrapper {
         "key": "0",
         "nodeType": "function",
         "props": Object {
-          "disabled": false,
           "flippedCard": Array [],
           "id": "robot0-1",
           "matchingCards": Array [],
@@ -88,13 +89,14 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <li>
-            Number of moves: 
+          <li
+            className="pa2"
+>
+            Moves: 
             0
 </li>,
           Array [
             <Card
-              disabled={false}
               flippedCard={Array []}
               id="robot0-1"
               matchingCards={Array []}
@@ -114,13 +116,14 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Number of moves: ",
+              "Moves: ",
               0,
             ],
+            "className": "pa2",
           },
           "ref": null,
           "rendered": Array [
-            "Number of moves: ",
+            "Moves: ",
             0,
           ],
           "type": "li",
@@ -130,7 +133,6 @@ ShallowWrapper {
           "key": "0",
           "nodeType": "function",
           "props": Object {
-            "disabled": false,
             "flippedCard": Array [],
             "id": "robot0-1",
             "matchingCards": Array [],
