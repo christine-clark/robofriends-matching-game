@@ -47,3 +47,23 @@ h2 {
 .card.open img {
   opacity: 100;
 }
+
+.alert {
+  max-width: 500px;
+  color: #4d4d4d;
+  background-color: #ffcc33;
+  border: 1px solid #ff9900;
+  border-radius: 5px;
+  padding: 0.25rem;
+  margin: 0.5rem auto;
+}
+
+.alert.alert-success {
+  background-color: #caf2bc;
+  border: 1px solid #60b044;
+}
+
+.alert.alert-danger {
+  background-color: #ffcccc;
+  border: 1px solid  #ff0000;
+}

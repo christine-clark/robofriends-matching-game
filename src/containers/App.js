@@ -14,12 +14,14 @@ class App extends Component {
 
 App.propTypes = {
   robots: PropTypes.array.isRequired,
+  error: PropTypes.bool,
   isPending: PropTypes.bool.isRequired
 };
 
 const mapStateToProps = (state) => {
   return {
     robots: state.robotsReducer.robots,
+    error: state.robotsReducer.error,
     isPending: state.robotsReducer.isPending
   };
 };

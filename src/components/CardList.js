@@ -9,7 +9,8 @@ class CardList extends Component {
       matchingCards: [],
       flippedCard: [],
       openedCard: [],
-      numberOfMoves: 0
+      numberOfMoves: 0,
+      successMessage: ''
     };
   }
 
@@ -50,7 +51,8 @@ class CardList extends Component {
   checkIfWin(matchingCards) {
     if (matchingCards.length === this.props.robots.length) {
       // Show window to display winning! and number of moves / star rating
-      alert('You win! Yay!');
+      alert('You did it! Awesome job!');
+      this.setState({ successMessage: 'You did it! Awesome job!' });
     }
   }
 
